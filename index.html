@@ -11,7 +11,7 @@
     <body style="margin: 0; overflow: hidden;">
         <a-scene
             vr-mode-ui="enabled: false;"
-            loading-screen="enabled: false;"
+            loading-screen="enabled: true;"
             renderer="logarithmicDepthBuffer: true;"
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
@@ -46,6 +46,7 @@
                     gltf-model="#animated-asset"
                     class="clickable"
                     gesture-handler
+                    rotation="0 0 90"
                 ></a-entity>
             </a-marker>
 
